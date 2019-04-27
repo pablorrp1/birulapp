@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-back-button defaultHref="home"></ion-back-button>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-input
+        round
+        type="text"
+        placeholder="Name"
+        name="fullname"
+        #name
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        round
+        type="email"
+        placeholder="Email"
+        name="email"
+        #email
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input
+        round
+        type="text"
+        placeholder="User"
+        name="user"
+        #user
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        type="password"
+        placeholder="Password"
+        name="password"
+        #password
+      ></ion-input>
+    </ion-item>
+    <ion-button color="success" shape="round" expand="block" (click)="Register()">
+      Registro
+    </ion-button>
+  </ion-list>
+</ion-content>
